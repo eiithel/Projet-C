@@ -76,26 +76,13 @@ Controls* input_get_controls_index(int key_number)
  * rend l'état de la touche demandée (vraie si appuyée)
  * ex : if(keypresse(player1, up))
  */
-/*
-int input_keypressed(char*, char*)
-{
-
-}
-*/
-
 int input_keypressed(char* nom_control)
 {
-	return (input_get_controls(nom_control))->key_state;
+	return ((input_get_controls(nom_control))->key_state) == GLFW_PRESS;
 }
 
-/*
-int input_keypressed_index(int, int)
-{
-
-}
-*/
 
 int input_keypressed_index(int key)
 {
-	return (input_get_controls_index(key))->key_state;
+	return ((input_get_controls_index(key))->key_state) == GLFW_PRESS;
 }

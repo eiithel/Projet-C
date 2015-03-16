@@ -143,13 +143,13 @@ int main(void)
 
     	input_update(window);
 
-    	if(input_keypressed("P1_left")==GLFW_PRESS)
+    	if(input_keypressed("P1_left"))
     	    mat4x4_rotate_Y(M, M, -0.002f);
-    	if(input_keypressed("P1_right")==GLFW_PRESS)
+    	if(input_keypressed("P1_right"))
     		mat4x4_rotate_Y(M, M, 0.002f);
-    	if(input_keypressed("P1_up")==GLFW_PRESS)
+    	if(input_keypressed("P1_up"))
     		mat4x4_translate_in_place(M, 0,0,-0.008);
-    	if(input_keypressed("P1_down")==GLFW_PRESS)
+    	if(input_keypressed("P1_down"))
     		mat4x4_translate_in_place(M, 0,0,+0.005);
 
 
