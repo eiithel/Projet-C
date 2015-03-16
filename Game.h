@@ -20,7 +20,7 @@ int count_scenes;
 extern Game_s Game;
 
 void game_launch();
-//int game_load_scenes();
+//int game_load_scenes();	//Charger la scene depuis un fichier
 int game_load_scene(char*);
 
 #endif /* GAME_H_ */
